@@ -286,6 +286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 717727988}
   player: {fileID: 2137665506}
+  maxEnemies: 10
   spawnRate: 2
   movementSpeed: 2
 --- !u!4 &131234656
@@ -497,7 +498,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 717727988}
   player: {fileID: 2137665506}
-  spawnRate: 2
+  maxEnemies: 10
+  spawnRate: 0.2
   movementSpeed: 3
 --- !u!4 &252713363
 Transform:
@@ -545,7 +547,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 717727988}
   player: {fileID: 2137665506}
-  spawnRate: 2
+  maxEnemies: 10
+  spawnRate: 1
   movementSpeed: 1
 --- !u!4 &313194677
 Transform:
@@ -1575,7 +1578,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 717727988}
   player: {fileID: 2137665506}
-  spawnRate: 1
+  maxEnemies: 10
+  spawnRate: 0.5
   movementSpeed: 1
 --- !u!1 &2124453951
 GameObject:
