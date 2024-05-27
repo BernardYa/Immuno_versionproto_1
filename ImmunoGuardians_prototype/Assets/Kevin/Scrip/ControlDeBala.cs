@@ -5,19 +5,30 @@ using UnityEngine;
 public class ControlDeBala : MonoBehaviour
 {
     [SerializeField] private Transform controldeDisparo;
-    [SerializeField] private GameObject Bala;
+    [SerializeField] private GameObject[] Balas;
+    [SerializeField] private float cargamaxima;
+    [SerializeField] private float tiempocarga;
 
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButton("Fire1"))
         {
-            //Disparo
-            Disparar();
+            if (tiempocarga <= cargamaxima )
+            {
+                tiempocarga += Time.deltaTime;
+            }
+            
+        }
+        if (Input .GetButtonUp("Fire1"))
+        {
+            Disparar((int)tiempocarga);
+            tiempocarga = 0;
         }
     }
 
-    private void Disparar()
+    private void Disparar(int tiempocarga)
     {
-        Instantiate(Bala, controldeDisparo.position, controldeDisparo.rotation);
+
+        Instantiate(Balas[tiempocarga ], controldeDisparo.position, controldeDisparo.rotation);
     }
 }
