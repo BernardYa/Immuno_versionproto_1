@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 2602967216909088407}
   - component: {fileID: 3311412978884988767}
   - component: {fileID: 2273939452209792074}
+  - component: {fileID: 5766947242243008239}
+  - component: {fileID: -2852117601322972989}
   m_Layer: 0
   m_Name: Bala
   m_TagString: Untagged
@@ -98,4 +100,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 20
-  "Da\xF1o": 10
+  "Da\xF1o": 20
+--- !u!58 &5766947242243008239
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3116623722149411508}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.12768625, y: -0.022306552}
+  serializedVersion: 2
+  m_Radius: 0.17577611
+--- !u!114 &-2852117601322972989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3116623722149411508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d05d89270ffb1df4d96f711a12980c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
