@@ -10,9 +10,18 @@ public class Bala : MonoBehaviour
 
     private void Update()
     {
-        transform.Translate(Vector3.left * velocidad * Time.deltaTime);
+        transform.Translate(Vector3.right  * velocidad * Time.deltaTime);
 
     }
+    
+    public void AumentarDaño(int multiplacadorDaño)
+    {
+        Daño += multiplacadorDaño * Daño;
+    }
+    
+    
+
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Enemigo"))
@@ -24,10 +33,4 @@ public class Bala : MonoBehaviour
     }
 }
 
-internal class Enemigo
-{
-    internal void TomarDaño(float daño)
-    {
-        throw new NotImplementedException();
-    }
-}
+
