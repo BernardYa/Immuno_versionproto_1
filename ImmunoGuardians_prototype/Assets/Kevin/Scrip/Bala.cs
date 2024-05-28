@@ -14,10 +14,10 @@ public class Bala : MonoBehaviour
 
     }
     
-    public void AumentarDaño(int multiplacadorDaño)
-    {
-        Daño += multiplacadorDaño * Daño;
-    }
+    //public void AumentarDaño(int multiplacadorDaño)
+   // {
+      //  Daño += multiplacadorDaño * Daño;
+    //}
     
     
 
