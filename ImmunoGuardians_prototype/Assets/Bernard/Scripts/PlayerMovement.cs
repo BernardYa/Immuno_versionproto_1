@@ -12,10 +12,13 @@ public class PlayerMovement : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
+        // Invertir el eje horizontal si es necesario
+        horizontalInput = -horizontalInput;
+
         // Calcular el vector de movimiento
-        Vector2 movement = new Vector2(horizontalInput, verticalInput) * moveSpeed * Time.deltaTime;
+        Vector3 movement = new Vector3(horizontalInput, 0f, verticalInput) * moveSpeed * Time.deltaTime;
 
         // Mover al jugador
-        transform.Translate(movement);
+        transform.Translate(movement, Space.World);
     }
 }

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class MovimientoRotacion : MonoBehaviour
 {
-    private float velocidad = 3f;
-    private float velocidadRotacion = 720f;
+    [SerializeField] private float velocidad = 3f;
+    [SerializeField] private float velocidadRotacion = 720f;
     private float angulo;
     private float horizontal;
     private float vertical;
@@ -17,10 +17,16 @@ public class MovimientoRotacion : MonoBehaviour
         vertical = Input.GetAxis("Vertical");
         movimineto = new Vector2(horizontal, vertical);
         movimineto.Normalize();
+
+        // Invertir el eje horizontal si es necesario
+        movimineto.x = -movimineto.x;
+
+        // Mover al jugador en el plano XY (2D)
         transform.Translate(movimineto * (velocidad * Time.deltaTime), Space.World);
 
         if (movimineto != Vector2.zero)
         {
+            // Calcular el ángulo de rotación en 2D
             angulo = Mathf.Atan2(movimineto.y, movimineto.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, 0, angulo), velocidadRotacion * Time.deltaTime);
         }
