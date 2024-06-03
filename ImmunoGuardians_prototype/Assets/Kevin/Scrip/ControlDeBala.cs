@@ -8,6 +8,8 @@ public class ControlDeBala : MonoBehaviour
     [SerializeField] private GameObject[] Balas;
     [SerializeField] private float cargamaxima;
     [SerializeField] private float tiempocarga;
+    [SerializeField] AudioSource  SonidoDis;
+    
 
     private void Update()
     {
@@ -16,6 +18,8 @@ public class ControlDeBala : MonoBehaviour
             if (tiempocarga <= cargamaxima )
             {
                 tiempocarga += Time.deltaTime;
+
+                SonidoDis.Play();
             }
             
         }
