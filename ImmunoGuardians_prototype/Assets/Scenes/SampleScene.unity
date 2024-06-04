@@ -364,6 +364,7 @@ GameObject:
   m_Component:
   - component: {fileID: 155711083}
   - component: {fileID: 155711084}
+  - component: {fileID: 155711085}
   m_Layer: 0
   m_Name: ControlDeBala
   m_TagString: Untagged
@@ -405,6 +406,103 @@ MonoBehaviour:
   - {fileID: 3010984429479167782, guid: d21c00ad659adf04797d2824189fe751, type: 3}
   cargamaxima: 2
   tiempocarga: 0
+  SonidoDis: {fileID: 155711085}
+--- !u!82 &155711085
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155711082}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a8b567a2f795caa4fac5bac3bd4b21a6, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &240694420
 GameObject:
   m_ObjectHideFlags: 0
@@ -1294,15 +1392,14 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-
   - component: {fileID: 552774443}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: 
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &552774443
 Transform:
   m_ObjectHideFlags: 0
@@ -1365,15 +1462,14 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  enzo
   m_GameObject: {fileID: 675751665}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f45047e392a35f4db69fc8fda7dd9b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 675751668}
-  playerHealth: {fileID: 2137665511}
+  slider: {fileID: 0}
+  playerHealth: {fileID: 0}
 --- !u!114 &675751668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1726,6 +1822,10 @@ Rigidbody2D:
   m_Constraints: 0
 --- !u!114 &717727995
 MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 717727988}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -2946,7 +3046,7 @@ Transform:
   m_GameObject: {fileID: 2137665505}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.38, y: 2.007, z: 0}
+  m_LocalPosition: {x: -5.66, y: 2.27, z: 0}
   m_LocalScale: {x: 3.1600163, y: 3.1215947, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3139,8 +3239,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 1277472565}
-  - {fileID: 1244858356}
-  - {fileID: 654420998}
   - {fileID: 2137665506}
   - {fileID: 717727989}
   - {fileID: 2006035184}
@@ -3153,3 +3251,5 @@ SceneRoots:
   - {fileID: 1932627402}
   - {fileID: 495651572}
   - {fileID: 552774443}
+  - {fileID: 349067457}
+  - {fileID: 1277563598}
