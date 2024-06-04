@@ -7,6 +7,7 @@ public class Bala : MonoBehaviour
 {
     [SerializeField] private float velocidad;
     [SerializeField] private float Daño;
+    
 
     private void Update()
     {
