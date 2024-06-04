@@ -1755,7 +1755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3815affc9d708445b7784ec25e39b29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 100
+  vida: 20
   efectomuerte: {fileID: 5638587645143258580, guid: 07b3b577cbe181b4da9c072887a22286, type: 3}
   points: 10
 --- !u!58 &717727993
