@@ -5,15 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public GameObject mainMenu;
+    public GameObject optionsMenu;
+
     public void StartGame()
     {
-        SceneManager.LoadScene(1);
+        Scene.Manager.LoadScene(Scene.Manager.GetActiveScene().buildIndex + 1);
     }
 
     public void OpenOptions()
     {
-        // Implementar lógica de opciones
-        Debug.Log("Opciones abiertas");
+        mainMenu.SetActive(false);
+        optionsMenu.SetActive(true);
     }
 
     public void ExitGame()
