@@ -6,12 +6,14 @@ using UnityEngine.UI;
 
 public class OptionsMenu : MonoBehaviour
 {
-    public AudioMixer audioMixer;
+    public GameObject mainMenu;
+    public GameObject optionsMenu;
+    public AudioMixer audioMixer; 
     public Slider volumeSlider; 
     public Slider brightnessSlider; 
 
     void Start()
-    {
+    { 
         float volume;
         audioMixer.GetFloat("Volume", out volume);
         volumeSlider.value = volume;
@@ -30,5 +32,11 @@ public class OptionsMenu : MonoBehaviour
     {
         RenderSettings.ambientLight = Color.white * brightness;
         PlayerPrefs.SetFloat("Brightness", brightness);
+    }
+
+    public void Back()
+    {
+        mainMenu.SetActive(true);
+        optionsMenu.SetActive(false);
     }
 }
