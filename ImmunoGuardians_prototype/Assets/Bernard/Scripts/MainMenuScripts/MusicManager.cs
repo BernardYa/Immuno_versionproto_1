@@ -23,4 +23,12 @@ public class MusicManager : MonoBehaviour
     {
         audioSource.volume = volume;
     }
+
+    public void StopMusic()
+    {
+        if (audioSource.isPlaying)
+        {
+            audioSource.Stop();
+        }
+    }
 }
