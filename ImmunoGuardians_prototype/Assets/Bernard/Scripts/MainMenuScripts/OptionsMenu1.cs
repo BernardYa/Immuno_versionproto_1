@@ -33,7 +33,11 @@ public class OptionsMenu : MonoBehaviour
 
     public void SetMusicVolume(float volume)
     {
-        // Aquí puedes ajustar el volumen de la música
+           
+        if (MusicManager.instance != null)
+        {
+            MusicManager.instance.SetVolume(volume);
+        }
         Debug.Log("Music Volume: " + volume);
     }
 }
