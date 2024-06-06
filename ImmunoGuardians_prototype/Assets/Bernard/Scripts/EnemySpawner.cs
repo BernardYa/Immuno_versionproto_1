@@ -33,6 +33,7 @@ public class EnemySpawner : MonoBehaviour
         if (enemyController != null)
         {
             enemyController.SetTarget(player, movementSpeed);
+            
         }
     }
 
@@ -40,4 +41,5 @@ public class EnemySpawner : MonoBehaviour
     {
         currentEnemyCount--;
     }
+    
 }
