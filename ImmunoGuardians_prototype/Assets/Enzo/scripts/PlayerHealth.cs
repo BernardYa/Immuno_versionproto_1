@@ -18,13 +18,14 @@ public class PlayerHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
-        }
+                    }
     }
 
     void Die()
     {
         Debug.Log("The Player has died");
         gameObject.SetActive(false);
+        Time.timeScale = 0;
     }
 
     public void Health(int amount)
