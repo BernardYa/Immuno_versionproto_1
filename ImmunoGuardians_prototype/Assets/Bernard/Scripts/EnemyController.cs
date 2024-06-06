@@ -21,7 +21,7 @@ public class EnemyController : MonoBehaviour
             transform.position += direction * speed * Time.deltaTime;
 
             // Puedes agregar rotación hacia el jugador si es necesario
-            // transform.right = direction;
+            transform.right = direction;
         }
     }
 }
