@@ -18,8 +18,7 @@ public class MovimientoRotacion : MonoBehaviour
         movimineto = new Vector2(horizontal, vertical);
         movimineto.Normalize();
 
-        // Invertir el eje horizontal si es necesario
-        movimineto.x = -movimineto.x;
+     
 
         // Mover al jugador en el plano XY (2D)
         transform.Translate(movimineto * (velocidad * Time.deltaTime), Space.World);
