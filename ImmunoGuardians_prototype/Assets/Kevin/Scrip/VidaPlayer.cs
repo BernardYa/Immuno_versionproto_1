@@ -11,7 +11,14 @@ public class VidaPlayer : MonoBehaviour
         CantidadVida -= Daño;
         if (CantidadVida <= 0)
         {
+            Die();
             Destroy(gameObject);
         }
+    }
+    void Die()
+    {
+        Debug.Log("The Player has died");
+        gameObject.SetActive(false);
+        Time.timeScale = 0;
     }
 }
