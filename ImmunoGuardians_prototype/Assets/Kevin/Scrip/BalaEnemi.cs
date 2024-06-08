@@ -14,8 +14,7 @@ public class BalaEnemi : MonoBehaviour
 
     }
 
- 
-
+   
 
 
 
@@ -25,7 +24,15 @@ public class BalaEnemi : MonoBehaviour
         {
             cantidadvida.TomarDaño(Daño);
             Destroy(gameObject);
-
+            Die();
         }
     }
+    void Die()
+    {
+        Debug.Log("The Player has died");
+        gameObject.SetActive(false);
+        Time.timeScale = 0;
+    }
+
+
 }
