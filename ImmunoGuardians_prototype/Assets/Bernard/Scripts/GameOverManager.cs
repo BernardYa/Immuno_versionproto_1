@@ -8,6 +8,7 @@ public class GameOverManager : MonoBehaviour
     public PlayerHealth  playerhealt; // Referencia al script de salud del jugador
     public Button playAgainButton;
     public Button exitButton;
+    public VidaPlayer player;
 
     void Start()
     {
@@ -26,6 +27,7 @@ public class GameOverManager : MonoBehaviour
         {
             GameOver();
         }
+      
     }
 
     void GameOver()

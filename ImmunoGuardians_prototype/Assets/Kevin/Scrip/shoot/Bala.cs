@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Bala : MonoBehaviour
 {
-    [SerializeField] private float velocidad;
+   [SerializeField] private float velocidad;
     [SerializeField] private float Daño;
     
 
@@ -16,8 +16,8 @@ public class Bala : MonoBehaviour
     }
     
     //public void AumentarDaño(int multiplacadorDaño)
-   // {
-      //  Daño += multiplacadorDaño * Daño;
+    //{
+        //Daño += multiplacadorDaño * Daño;
     //}
     
     

@@ -20,9 +20,9 @@ public class BalaEnemi : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.TryGetComponent(out VidaPlayer cantidadvida))
+        if (other.TryGetComponent(out PlayerHealth  currentHealth))
         {
-            cantidadvida.TomarDaño(Daño);
+            currentHealth.TakeDamage(Daño);
             
            
         }

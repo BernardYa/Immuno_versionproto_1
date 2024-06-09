@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -8161812651788001714}
   - component: {fileID: 5345808989769960815}
   - component: {fileID: 557639320727011449}
+  - component: {fileID: -7979915165540000710}
   m_Layer: 0
   m_Name: balaBase
   m_TagString: Untagged
@@ -79,7 +80,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 18e43425d25ba4059b0c5ed560a3622d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.48, y: 0.32}
@@ -100,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 613472f5a09221c4ca160557501ead4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 20
+  velocidad: 10
   "Da\xF1o": 10
 --- !u!58 &-8161812651788001714
 CircleCollider2D:
@@ -170,3 +171,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d05d89270ffb1df4d96f711a12980c7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &-7979915165540000710
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2365752161259823594}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
