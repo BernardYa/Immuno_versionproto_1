@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class GameOverManager : MonoBehaviour
 {
     public GameObject gameOverPanel;
-    public VidaPlayer  vidaplayer; // Referencia al script de salud del jugador
+    public PlayerHealth  playerhealt; // Referencia al script de salud del jugador
     public Button playAgainButton;
     public Button exitButton;
 
@@ -22,7 +22,7 @@ public class GameOverManager : MonoBehaviour
     void Update()
     {
         // Comprobar si la salud del jugador es menor o igual a 0
-        if (VidaPlayer.CantidadVida<= 0)
+        if (playerhealt .currentHealth <= 0)
         {
             GameOver();
         }
