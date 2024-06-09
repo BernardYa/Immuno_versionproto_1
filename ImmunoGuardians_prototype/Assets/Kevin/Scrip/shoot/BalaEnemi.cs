@@ -23,7 +23,7 @@ public class BalaEnemi : MonoBehaviour
         if (other.TryGetComponent(out PlayerHealth  currentHealth))
         {
             currentHealth.TakeDamage(Daño);
-            
+            Destroy(gameObject);
            
         }
     }
