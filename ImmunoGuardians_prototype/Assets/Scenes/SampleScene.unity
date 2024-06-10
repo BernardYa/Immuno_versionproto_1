@@ -579,13 +579,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c50ce4dba658a8740b181b37ea1bc1dd, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.542
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 77
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -1756,7 +1756,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 2095058564}
   victoryPanel: {fileID: 1652170839}
-  victorySound: {fileID: 8300000, guid: 73b2527973bbdf34cbe387b2965074a7, type: 3}
+  victorySound: {fileID: 8300000, guid: f7eea642c28431441867537ca90d27fa, type: 3}
 --- !u!114 &495651569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1850,7 +1850,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 73b2527973bbdf34cbe387b2965074a7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f7eea642c28431441867537ca90d27fa, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
