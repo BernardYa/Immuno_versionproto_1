@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -13,13 +14,16 @@ public class BariosShoot : MonoBehaviour
 
     public Transform shootpoint;
     // public float shootSpeed;
-    [SerializeField] AudioSource SonidoDis;
+   // [SerializeField] AudioSource SonidoDis;
+    public AudioClip sound1; // Sonido para bullet1
+    public AudioClip sound2; // Sonido para bullet2
 
-
+    private AudioSource audioSource;
 
     private void Start()
     {
         CurrentBullet = bullet1;
+        audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     private void Update()
@@ -27,7 +31,7 @@ public class BariosShoot : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             ShootBullet();
-            SonidoDis.Play();
+           // SonidoDis.Play();
         }
      
            
@@ -51,7 +55,22 @@ public class BariosShoot : MonoBehaviour
     {
         var bullet = Instantiate(CurrentBullet , shootpoint);
         bullet.transform.SetParent(null);
-        //bullet.GetComponent<Rigidbody2D>().velocity = shootpoint.right * shootSpeed;
+
+        PlayShootSound();
     }
 
+    private void PlayShootSound()
+    {
+        if (CurrentBullet == bullet1)
+        {
+            audioSource.clip = sound1;
+        }
+        else if (CurrentBullet == bullet2)
+        {
+            audioSource.clip = sound2;
+        }
+
+        audioSource.Play();
+    }
 }
+
