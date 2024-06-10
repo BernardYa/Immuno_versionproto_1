@@ -6,20 +6,23 @@ public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 100;
     public int currentHealth;
-
+    public HealthBar healthBar; // Referencia a la barra de vida
 
     void Start()
     {
         currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth); // Inicializa la barra de vida
     }
 
     public void TakeDamage(int amount)
     {
         currentHealth -= amount;
+        healthBar.SetHealth(currentHealth); // Actualiza la barra de vida
+
         if (currentHealth <= 0)
         {
             Die();
-                    }
+        }
     }
 
     void Die()
@@ -29,13 +32,13 @@ public class PlayerHealth : MonoBehaviour
         Time.timeScale = 0;
     }
 
-    public void Health(int amount)
+    public void Heal(int amount)
     {
         currentHealth += amount;
         if (currentHealth > maxHealth)
         {
             currentHealth = maxHealth;
         }
+        healthBar.SetHealth(currentHealth); // Actualiza la barra de vida
     }
 }
-
