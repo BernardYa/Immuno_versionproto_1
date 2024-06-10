@@ -2476,8 +2476,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f45047e392a35f4db69fc8fda7dd9b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 0}
-  playerHealth: {fileID: 0}
 --- !u!114 &675751668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3225,7 +3223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.55802774, g: 0.9622642, b: 0.05900679, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
