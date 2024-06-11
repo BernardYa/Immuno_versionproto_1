@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -37,5 +36,16 @@ public class GameManager : MonoBehaviour
     {
         victoryPanel.SetActive(true); // Muestra el panel de victoria
         Time.timeScale = 0f; // Pausa el juego
+        StartCoroutine(CloseGameAfterDelay(9f)); // Inicia la corutina para cerrar el juego después de 9 segundos
+    }
+
+    IEnumerator CloseGameAfterDelay(float delay)
+    {
+        yield return new WaitForSecondsRealtime(delay); // Espera 9 segundos en tiempo real
+        Application.Quit(); // Cierra el juego
+#if UNITY_EDITOR
+        // Si estás en el editor de Unity, esto detendrá el modo de juego
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
 }

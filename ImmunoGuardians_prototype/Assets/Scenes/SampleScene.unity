@@ -565,7 +565,7 @@ MonoBehaviour:
   - {fileID: 2781888260634905728, guid: d8f0047aaa679794bad0da887bcdc550, type: 3}
   - {fileID: 3010984429479167782, guid: d21c00ad659adf04797d2824189fe751, type: 3}
   cargamaxima: 2
-  tiempocarga: 0
+  tiempocarga: 1
   SonidoDis: {fileID: 155711085}
 --- !u!82 &155711085
 AudioSource:
@@ -8783,7 +8783,8 @@ MonoBehaviour:
   bullet1: {fileID: 2365752161259823594, guid: 4d7b2bba1ad09894d921d92af9b775f5, type: 3}
   bullet2: {fileID: 3010984429479167782, guid: d21c00ad659adf04797d2824189fe751, type: 3}
   shootpoint: {fileID: 155711083}
-  SonidoDis: {fileID: 2137665521}
+  sound1: {fileID: 8300000, guid: a49145d1d5b329f4d994ae16f3ed10ea, type: 3}
+  sound2: {fileID: 8300000, guid: ea5f9d0bc04980c428ffa51527e2b589, type: 3}
 --- !u!82 &2137665521
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8796,7 +8797,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 938a0dbf7599fa74ca5e03784f510d5b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.074
+  m_Volume: 0.172
   m_Pitch: 1
   Loop: 0
   Mute: 0
